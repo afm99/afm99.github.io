@@ -1,27 +1,16 @@
+
 <!DOCTYPE html>
 <html>
-	
-	<body>
-		<h1>Hello World</h1>
-		<p>I'm hosted with GitHub Pages.</p>
-
-		<script type="text/javascript">
-
- var Text = 'hello';
-
-    function setInput(button) {
-       var buttonVal = button.name,
-       textbox = document.getElementById('input_' + buttonVal);
-       textbox.value = Text ;
-	      button.style.visibility = "hidden";
-		  button.style.display = "none";
-
-
-    }
+<head>
+<script type='text/javascript'>
+window.onload=function(){<!--  ww  w  .  java2  s. c o  m-->
+    document.getElementById("toggle").style.visibility="hidden";
+}
 </script>
-	
-		<input class='input' id="input_a1" name="a1" value="<?php {echo $a1;} ?>"> 
-      <input type='submit' name='a1' value='x' onclick='setInput(this); return false;'>
-		
-	</body>
+</head>
+<body>
+  <form id="formvisiblity">
+    <input id="toggle" type="submit" text="submit" name="accept" />
+  </form>
+</body>
 </html>
