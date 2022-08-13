@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<script>
+			function playSound() {
+				var sounds = new Array(
+				"dobado.mp3"
+			);
+
+			$("button").html("<embed src=\"https://raw.githubusercontent.com/afm99/afm99.github.io/main/dobado.mp3"+sounds[Math.floor(Math.random()*(sounds.length+1))]+"\" hidden=\"true\" autostart=\"true\" />");
+		</script>
+	</head>
+	
 	<body>
 		<h1>Hello World</h1>
 		<p>I'm hosted with GitHub Pages.</p>
 
-	<script>
-		function playSound() {
-			var sounds = new Array(
-			"https://raw.githubusercontent.com/afm99/afm99.github.io/main/dobado.mp3"
-		);
-
-		$("button").html("<embed src=\""+sounds[Math.floor(Math.random()*(sounds.length+1))]+"\" hidden=\"true\" autostart=\"true\" />");
-	</script>
+	
 		<div id="element">
 			<button onclick="javascript:playSound()">Try it</button>
 		</div>
