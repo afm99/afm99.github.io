@@ -4,14 +4,14 @@
 		<h1>Hello World</h1>
 		<p>I'm hosted with GitHub Pages.</p>
 
-
+	<script>
 		function playSound() {
 			var sounds = new Array(
 			"https://raw.githubusercontent.com/afm99/afm99.github.io/main/dobado.mp3"
 		);
 
-	$("button").html("<embed src=\""+sounds[Math.floor(Math.random()*(sounds.length+1))]+"\" hidden=\"true\" autostart=\"true\" />");
-
+		$("button").html("<embed src=\""+sounds[Math.floor(Math.random()*(sounds.length+1))]+"\" hidden=\"true\" autostart=\"true\" />");
+	</script>
 		<div id="element">
 			<button onclick="javascript:playSound()">Try it</button>
 		</div>
