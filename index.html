@@ -19,10 +19,7 @@ window.addEventListener('load', () => {
 						source.loop = true;
 						source.start();
 
-				
-					};
-
-					audioCtx.decodeAudioData(xhr.response).then(playsound);
+					
 				});
 				xhr.send();
 			});
