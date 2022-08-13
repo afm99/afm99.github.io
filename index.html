@@ -3,33 +3,16 @@
   <head>
     <meta charset="UTF-8" />
 	    <script>
-		const btn = document.getElementById('btn');
-
-btn.addEventListener('click', () => {
-  // 👇️ hide button
-  btn.style.display = 'none';
-
-  // 👇️ show div
-  const box = document.getElementById('box');
-  box.style.display = 'block';
+	$(document).on('click', '#submit', function(){
+      var id = $(this).attr("id");
+      $(this).remove();
 });
-
-	</script>
+		</script>
   </head>
 
-  <body>
-    <div
-      id="box"
-      style="
-        height: 100px;
-        width: 100px;
-        background-color: salmon;
-        display: none;
-      "
-    >
-      Box
-    </div>
-    <button id="btn">Click me</button>
+	<body>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<button id="submit">Submit</button>
 
 
   </body>
