@@ -5,18 +5,19 @@
 		<h1>Hello World</h1>
 		<p>I'm hosted with GitHub Pages.</p>
 
-		<script>
-			function playSound() {
-				var sounds = new Array(
-				"dobado.mp3"
-			);
+		<script type="text/javascript">
 
-			$("button").html(<embed src="https://raw.githubusercontent.com/afm99/afm99.github.io/main/dobado.mp3">);
-		</script>
+ var Text = 'hello';
+
+    function setInput(button) {
+       var buttonVal = button.name,
+       textbox = document.getElementById('input_' + buttonVal);
+       textbox.value = Text ;
+    }
+</script>
 	
-		<div id="element">
-			<button onclick="javascript:playSound()">push me</button>
-		</div>
+		<input class='input' id="input_a1" name="a1" value="<?php {echo $a1;} ?>"> 
+      <input type='submit' name='a1' value='x' onclick='setInput(this); return false;'>
 		
 	</body>
 </html>
