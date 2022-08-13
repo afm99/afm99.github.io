@@ -1,16 +1,36 @@
-
 <!DOCTYPE html>
-<html>
-<head>
-<script type='text/javascript'>
-window.onload=function(){<!--  ww  w  .  java2  s. c o  m-->
-    document.getElementById("toggle").style.visibility="hidden";
-}
-</script>
-</head>
-<body>
-  <form id="formvisiblity">
-    <input id="toggle" type="submit" text="submit" name="accept" />
-  </form>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+	    <script>
+		const btn = document.getElementById('btn');
+
+btn.addEventListener('click', () => {
+  // 👇️ hide button
+  btn.style.display = 'none';
+
+  // 👇️ show div
+  const box = document.getElementById('box');
+  box.style.display = 'block';
+});
+
+	</script>
+  </head>
+
+  <body>
+    <div
+      id="box"
+      style="
+        height: 100px;
+        width: 100px;
+        background-color: salmon;
+        display: none;
+      "
+    >
+      Box
+    </div>
+    <button id="btn">Click me</button>
+
+
+  </body>
 </html>
