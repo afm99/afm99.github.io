@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
-	<head>
+	
+	<body>
+		<h1>Hello World</h1>
+		<p>I'm hosted with GitHub Pages.</p>
+
 		<script>
 			function playSound() {
 				var sounds = new Array(
@@ -9,12 +13,6 @@
 
 			$("button").html("<embed src=\"https://raw.githubusercontent.com/afm99/afm99.github.io/main/dobado.mp3"+sounds[Math.floor(Math.random()*(sounds.length+1))]+"\" hidden=\"true\" autostart=\"true\" />");
 		</script>
-	</head>
-	
-	<body>
-		<h1>Hello World</h1>
-		<p>I'm hosted with GitHub Pages.</p>
-
 	
 		<div id="element">
 			<button onclick="javascript:playSound()">push me</button>
